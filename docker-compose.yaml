@@ -28,7 +28,7 @@ services:
     container_name: nginx
     hostname: nginx
     volumes:
-      - ~/nginx/servers/:/etc/nginx/servers/
+      - ./nginx/servers/:/etc/nginx/conf.d/
       - ./nginx/letsencrypt/:/etc/letsencrypt/
     ports:
       - "80:80/tcp"
